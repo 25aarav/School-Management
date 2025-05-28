@@ -22,6 +22,9 @@ function calculateDistance(lat1, lon1, lat2, lon2) {
   return distance;
 }
 
+router.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the School Management API!' });
+});
 
 router.get('/listSchools', (req, res) => {
   const { latitude, longitude, page = 1, limit = 5 } = req.query;

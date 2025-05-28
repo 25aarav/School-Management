@@ -10,8 +10,8 @@ const app = express();
 
 app.use(express.json());
 
-router.get('/', (req, res) => {
-  res.json({ message: 'Welcome to the School Management API!' });
+app.get('/', (req, res) => {
+  res.json({ message: 'Welcome to the School Management API Base URL!' });
 });
 app.use('/api', schoolRoutes);
 app.use('/api/addSchool' , addSchoolRoutes);
