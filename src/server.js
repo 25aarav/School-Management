@@ -13,6 +13,10 @@ app.get('/', (req, res) => {
   res.json({ message: 'Welcome to the School Management API Base URL!' });
 });
 
+app.get('/api', (req, res) => {
+  res.json({ message: 'Welcome to the School Management API!' });
+});
+
 // List schools: GET /api/schools
 // Add school: POST /api/schools
 app.use('/api/schools', schoolRoutes);
