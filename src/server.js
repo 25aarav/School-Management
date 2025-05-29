@@ -1,6 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import addSchoolRoutes from './routes/addSchool.js'; // note corrected filename
+import addSchoolRoutes from './routes/addSchoolRoutes.js';
 import schoolRoutes from './routes/schools.js';
 
 dotenv.config();
